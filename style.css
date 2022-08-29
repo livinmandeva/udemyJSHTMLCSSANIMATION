@@ -1,0 +1,53 @@
+body {
+  background-color: black !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-family: sans-serif !important;
+  padding: 20px !important;
+}
+.userdiv {
+  font-size: large;
+  font-weight: 100;
+  align-items: center;
+  margin-left: 45% !important;
+  padding: 40px 20px !important;
+}
+
+.userinputs {
+  margin-top: 100px;
+}
+
+.gussno {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  border: 1px solid whitesmoke;
+}
+.userinputs button {
+  padding: 15px 19px 9px 10px;
+  background-color: rgb(14, 71, 71);
+  color: whitesmoke;
+  font-size: small;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.userinputs button :hover {
+  color: whitesmoke;
+  background-color: rgb(14, 71, 71);
+}
+.wincontent {
+  justify-self: center;
+  align-items: center;
+  color: green;
+  font-size: 20px;
+  margin-left: 35%;
+  font-family: sans-serif;
+  width: 100vh;
+  padding: 50px !important;
+}
+
+.hidden {
+  display: none;
+}

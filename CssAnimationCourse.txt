@@ -1,0 +1,32 @@
+transition-timing-function: ease, ease-in,ease-out,linear,ease-in-out;
+
+
+ease: slow at starting
+ease out : fast at begining and slow at end
+liner : same ratio at both end and starting
+ease in: salow at begining and faster at  end
+ease in out :   beging fater in middle faster and at end faster
+
+
+
+transition:(elementname  transtiontiming transition-timing-function transition-delay) 
+
+transform: rotate(1turn);
+/* transform: skewX(30deg); */
+  /* transform: translateX(500px); */
+      transform: rotate(1grad);
+
+      3d animation 
+      pro
+      transform: rotate(40deg)
+
+ vh : one percent view port height
+ vw: one percent view  width
+ em: it is used to font size and font length
+ rem : based on  root path  font size
+ browser default  fontsize is 16px
+
+REM is defined relative to the font size of the root element.
+inheritance
+
+: 

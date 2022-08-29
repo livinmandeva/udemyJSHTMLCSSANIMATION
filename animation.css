@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  perspective: 500px;
+}
+
+.btn-info {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 2s ease-in 0.2s;
+  margin: auto;
+  transform-origin: top;
+}
+.btn-info:hover {
+  background-color: #28b48578;
+  transform: rotateX(360deg);
+
+  /* transform: rotate(1turn); */
+  /* transform: skewX(30deg); */
+  /* transform: translateX(500px); */
+}
+.diffrenttypeButtons {
+  height: 200px;
+  display: block;
+  margin-top: 50px;
+}
+.diffrenttypeButtons a {
+  padding: 10px 40px;
+  margin: 5px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 5px solid #777;
+  position: relative;
+  overflow: hidden;
+}
+.diffrenttypeButtons .btn1 {
+  color: #27272280;
+}
+.diffrenttypeButtons a:before {
+  content: '';
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: rotate(0deg);
+  transition: all 2s ease-in;
+  transform-origin: top;
+  overflow: hidden;
+}
+
+.diffrenttypeButtons a:hover::before {
+  transform: rotateX(90deg);
+}
+
+/* .honerOverflow {
+  display: inline-block;
+} */
+
+.btn-overflow {
+  font-size: 16px;
+  font-family: sans-serif;
+  border: 3px solid black;
+  padding: 20px 40px;
+  color: black;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.btn-overflow::before {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(183, 16, 192, 0.708);
+  position: absolute;
+  transition: all 2s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.btn-overflow:hover::before {
+  transform: translateX(0);
+}
+
+.btn-overflow:hover {
+  color: black;
+}

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 10rem;
+  padding: 1rem;
+  color: #777;
+  perspective: 50rem;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7ed56f8d, #28b48578),
+    url('./UdemyImages/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative;
+}
+.headerImgae {
+  top: 2rem;
+  left: 3rem;
+  height: 10rem;
+  position: absolute;
+  width: 10rem;
+  background-size: cover;
+}
+.modal-box {
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+/* .text-content {
+  position: absolute;
+} */
+.maintext {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 20rem;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  animation-name: moveinleft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes moveinleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.subcontent {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 20rem;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 4px;
+  animation-name: moverightToLeft;
+  animation-duration: 3s;
+  margin-bottom: 6rem;
+}
+@keyframes moverightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn:active {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn-animastion {
+  animation-name: movedowntotop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-duration: 2s;
+}
+@keyframes movedowntotop {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
